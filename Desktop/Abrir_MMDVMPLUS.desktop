@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/A108;lxterminal --geometry=88x19 --title=DMRPLUS -e sudo sh ejecutar_dmrplus-new.sh'
+Exec=sh -c 'cd /home/pi/A108;lxterminal --geometry=88x19 --title=DMRPLUS -e sudo sh ejecutar_dmrplus_new.sh'
 Icon=/home/pi/A108/ICONO_DMRPLUS_OFF.png
 Type=Application
 StartupNotify=false
