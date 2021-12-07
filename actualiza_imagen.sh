@@ -48,18 +48,18 @@ MARRON="\33[38;5;138m"
                         exit
                         fi
 
-                        # Actualiza AUTORRANQUEA108
+                        # Actualiza AUTORRANQUE_A108
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/AUTOARRANQUEA108 
+                        git clone http://github.com/ea3eiz/AUTOARRANQUE_A108 
                         sleep 2                      
-                        if [ -d /home/pi/.local/AUTOARRANQUEA108 ]
+                        if [ -d /home/pi/.local/AUTOARRANQUE_A108 ]
                         then
-                        sudo rm -R /home/pi/AUTOARRANQUEA108
-                        cp -R /home/pi/.local/AUTOARRANQUEA108 /home/pi   
+                        sudo rm -R /home/pi/AUTOARRANQUE_A108
+                        cp -R /home/pi/.local/AUTOARRANQUE_A108 /home/pi   
                         cd /home/pi                    
-                        sudo chmod 777 -R AUTOARRANQUEA108
+                        sudo chmod 777 -R AUTOARRANQUE_A108
                         cd /home/pi/.local
-                        sudo rm -R AUTOARRANQUEA108
+                        sudo rm -R AUTOARRANQUE_A108
                         else
                         echo "Error de red"
                         exit
