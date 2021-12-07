@@ -1,2 +1,2 @@
 #!/bin/bash
-/home/pi/V107/./qt_info_especial
+/home/pi/A108/./qt_info_especial

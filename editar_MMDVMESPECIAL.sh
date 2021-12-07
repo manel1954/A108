@@ -589,7 +589,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
 sh Puertos_MMDVMESPECIAL.sh
-#/home/pi/V107/./qt_puertos_modem_especial
+#/home/pi/A108/./qt_puertos_modem_especial
                           break;;
                           [nN]* ) echo ""
                           break;;

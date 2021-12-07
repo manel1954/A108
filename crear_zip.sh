@@ -177,9 +177,9 @@ sudo cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
 sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
 cd /home/pi/.local/COPIA_SEGURIDAD
-tar -zcvf Copia_V107.zip Downloads
-cp  Copia_V107.zip /var/www/html/upload/files
-sudo Copia_V107.zip
+tar -zcvf Copia_A108.zip Downloads
+cp  Copia_A108.zip /var/www/html/upload/files
+sudo Copia_A108.zip
 
 
 

@@ -1,4 +1,4 @@
-REPORT_NAME     = 'HBLINK IMAGEN ADER V107'
+REPORT_NAME     = 'HBLINK IMAGEN ADER A108'
 CONFIG_INC      = True                           # Include HBlink stats
 LASTHEARD_INC   = True                           # Include Lastheard (10)
 HOMEBREW_INC    = True                           # Include Homebrew Peers 

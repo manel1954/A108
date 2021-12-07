@@ -1,2 +1,2 @@
 #!/bin/bash
-/home/pi/V107/./qt_info_dmrplus_new
+/home/pi/A108/./qt_info_dmrplus_new

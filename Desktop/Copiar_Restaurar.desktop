@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Terminal=true
-Exec=sh -c "cd /home/pi/V107;./qt_copiar_restaurar"
-Icon=/home/pi/V107/ICONO_COPIAR_RESTAURAR1.png
+Exec=sh -c "cd /home/pi/A108;./qt_copiar_restaurar"
+Icon=/home/pi/A108/ICONO_COPIAR_RESTAURAR1.png
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen

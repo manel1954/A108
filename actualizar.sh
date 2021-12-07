@@ -7,10 +7,10 @@ xfdesktop --reload
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="V107"
+SCRIPTS_version="A108"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 
-version="V107-"
+version="A108-"
 version=$version$actualizacion
 
 hblink=$(awk "NR==14" /home/pi/info.ini)
@@ -18,7 +18,7 @@ largo=`expr substr $hblink 1 6`
 hblink=$largo
 
 sed -i "4c Name=Activar Puente 21465" /home/pi/Desktop/Lanzar_puente.desktop
-sed -i "7c Icon=/home/pi/V107/ICONO_DMR_CENTRAL.png" /home/pi/Desktop/Lanzar_puente.desktop
+sed -i "7c Icon=/home/pi/A108/ICONO_DMR_CENTRAL.png" /home/pi/Desktop/Lanzar_puente.desktop
 sed -i "6c Exec=sh lanzar_puente_21465.sh" /home/pi/Desktop/Lanzar_puente.desktop
 
 #pone todos los status de inicio en OFF
@@ -282,7 +282,7 @@ rm $usuario/RXF_DMRGATEWAY.desktop
 sudo chmod 777 -R $usuario/Desktop
 sleep 2
 
-sudo rm -R /home/pi/V107/associacioader.com
-sudo rm -R /home/pi/V107/Desktop/associacioader.com
-sudo rm /home/pi/V107/Desktop/st-data
+sudo rm -R /home/pi/A108/associacioader.com
+sudo rm -R /home/pi/A108/Desktop/associacioader.com
+sudo rm /home/pi/A108/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data

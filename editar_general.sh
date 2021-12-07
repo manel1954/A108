@@ -1233,7 +1233,7 @@ do
         
         sed -i "10c $info" /home/pi/info.ini 
         sudo killall qt_indicativo
-        cd /home/pi/V107     
+        cd /home/pi/A108     
         sudo sh indicativo.sh &                 
         break;;
         [nN]* ) echo ""

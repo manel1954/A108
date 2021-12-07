@@ -16,24 +16,24 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 
-                        # Actualiza V107
+                        # Actualiza A108
                         
-                        #cd /home/pi/V107/Desktop
+                        #cd /home/pi/A108/Desktop
                         #cp * /home/pi/Desktop
 
 
 
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/V107 
+                        git clone http://github.com/ea3eiz/A108 
                         sleep 2
-                        if [ -d /home/pi/.local/V107 ]
+                        if [ -d /home/pi/.local/A108 ]
                         then
-                        sudo rm -R /home/pi/V107
-                        cp -R /home/pi/.local/V107 /home/pi                        
+                        sudo rm -R /home/pi/A108
+                        cp -R /home/pi/.local/A108 /home/pi                        
                         cd /home/pi
-                        sudo chmod 777 -R V107
+                        sudo chmod 777 -R A108
                         cd /home/pi/.local
-                        sudo rm -R V107
+                        sudo rm -R A108
                         else
                         clear
                         echo "${VERDE}"
@@ -48,26 +48,26 @@ MARRON="\33[38;5;138m"
                         exit
                         fi
 
-                        # Actualiza AUTORRANQUEV107
+                        # Actualiza AUTORRANQUEA108
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/AUTOARRANQUEV107 
+                        git clone http://github.com/ea3eiz/AUTOARRANQUEA108 
                         sleep 2                      
-                        if [ -d /home/pi/.local/AUTOARRANQUEV107 ]
+                        if [ -d /home/pi/.local/AUTOARRANQUEA108 ]
                         then
-                        sudo rm -R /home/pi/AUTOARRANQUEV107
-                        cp -R /home/pi/.local/AUTOARRANQUEV107 /home/pi   
+                        sudo rm -R /home/pi/AUTOARRANQUEA108
+                        cp -R /home/pi/.local/AUTOARRANQUEA108 /home/pi   
                         cd /home/pi                    
-                        sudo chmod 777 -R AUTOARRANQUEV107
+                        sudo chmod 777 -R AUTOARRANQUEA108
                         cd /home/pi/.local
-                        sudo rm -R AUTOARRANQUEV107
+                        sudo rm -R AUTOARRANQUEA108
                         else
                         echo "Error de red"
                         exit
                         fi                                       
                         
                         # modificacion 26-04-2021
-                        cp /home/pi/V107/pararservicios_hblink.sh /home/pi
-                        cp /home/pi/V107/pararservicios_hblink.desktop /home/pi/.config/autostart
+                        cp /home/pi/A108/pararservicios_hblink.sh /home/pi
+                        cp /home/pi/A108/pararservicios_hblink.desktop /home/pi/.config/autostart
                         sudo chmod 777 /home/pi/pararservicios_hblink.sh
                         sudo chmod 777 /home/pi/.config/autostart/pararservicios_hblink.desktop 
                         
@@ -131,4 +131,4 @@ MARRON="\33[38;5;138m"
                         sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V107/./qt_imagen_actualizada
+/home/pi/A108/./qt_imagen_actualizada

@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /home/pi/V107/; sudo ./qt_indicativo
+cd /home/pi/A108/; sudo ./qt_indicativo

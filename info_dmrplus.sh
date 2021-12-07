@@ -1,5 +1,5 @@
 #!/bin/bash
-/home/pi/V107/./qt_info_dmrplus
+/home/pi/A108/./qt_info_dmrplus
 #DIRECTORIO="MMDVMPLUS.ini"
 ##linea_info_memoria="313" #Linea del MMDVM donde guardamos el nombre de la memoria
 #

@@ -584,7 +584,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
 #sh Puertos_MMDVM.sh
-/home/pi/V107/./qt_puertos_modem_radio
+/home/pi/A108/./qt_puertos_modem_radio
                           break;;
                           [nN]* ) echo ""
                           break;;

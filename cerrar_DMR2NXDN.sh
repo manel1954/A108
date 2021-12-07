@@ -22,7 +22,7 @@ echo "                  ******************************************"
 sleep 3
 
 # Activa DVSWITCH
-cd /home/pi/V107
+cd /home/pi/A108
 sh ejecutar_dvswitch.sh
 
 else
