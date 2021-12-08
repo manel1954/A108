@@ -13,14 +13,6 @@ actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 version="A108-"
 version=$version$actualizacion
 
-hblink=$(awk "NR==14" /home/pi/info.ini)
-largo=`expr substr $hblink 1 6`
-hblink=$largo
-
-sed -i "4c Name=Activar Puente 21465" /home/pi/Desktop/Lanzar_puente.desktop
-sed -i "7c Icon=/home/pi/A108/ICONO_DMR_CENTRAL.png" /home/pi/Desktop/Lanzar_puente.desktop
-sed -i "6c Exec=sh lanzar_puente_21465.sh" /home/pi/Desktop/Lanzar_puente.desktop
-
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
 sed -i "2c BlueDV=OFF" $usuario/status.ini
@@ -32,7 +24,7 @@ sed -i "7c MMDVMBM=OFF" $usuario/status.ini
 sed -i "8c SVXLINK=OFF" $usuario/status.ini
 sed -i "9c dstarrepeater=OFF" $usuario/status.ini
 sed -i "10c MMDVMLIBRE=OFF" $usuario/status.ini
-se vd -i "11c AMBE_SERVER=OFF" $usuario/status.ini
+sed -i "11c AMBE_SERVER=OFF" $usuario/status.ini
 sed -i "12c SOLOFUSION=OFF" $usuario/status.ini
 sed -i "13c SOLODSTAR=OFF" $usuario/status.ini
 sed -i "14c YSF2DMR=OFF" $usuario/status.ini
@@ -170,7 +162,7 @@ dstar=`sed -n '2p'  $usuario/MMDVMHost/MMDVMDSTAR.ini`
 fusion=`sed -n '2p'  $usuario/MMDVMHost/MMDVMFUSION.ini`
 frbm=`sed -n '13p'  $usuario/MMDVMHost/MMDVMBM.ini`
 frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
-sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'DMR2YSF=$masterDMR2YSF'&'YSFGateway=$masterYSFGateway'&'hblink=$hblink                       
+sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'DMR2YSF=$masterDMR2YSF'&'YSFGateway=$masterYSFGateway                      
 frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
 cd $usuario/Desktop/
 cp RXF_BM.desktop $usuario/
@@ -267,16 +259,6 @@ sed -i "11c Name=$frecuencia" $usuario/RXF_DMRGATEWAY.desktop
 cd $usuario
 cp RXF_DMRGATEWAY.desktop $usuario/Desktop
 rm $usuario/RXF_DMRGATEWAY.desktop
-
-
-
-
-
-
-
-
-
-
 
 # Dar permisos al Escritorio
 sudo chmod 777 -R $usuario/Desktop
