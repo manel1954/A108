@@ -32,6 +32,7 @@
                     sed -i "229c Type=Direct" /home/pi/MMDVMHost/MMDVM.ini
                     sed -i "231c # LocalPort=62032" /home/pi/MMDVMHost/MMDVM.ini
                     sed -i "234c Password=PASSWORD" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "152c Enable=0" /home/pi/MMDVMHost/MMDVM.ini
 
                     # Crea los ejecutables para estas aplicaciones 
                     cd /home/pi/MMDVMHost
