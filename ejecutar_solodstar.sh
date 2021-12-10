@@ -128,7 +128,7 @@ caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
 numero_linea_port=`expr substr $mode 1 $caracteres_linea`
 mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDSTAR.ini)
-puerto=`expr substr $mode 11 9`
+puerto=`expr substr $mode 15 14`
 puerto="  "$puerto
 cd /home/pi/Desktop
 sudo cp RXF_DSTAR.desktop /home/pi
