@@ -114,14 +114,6 @@ sleep 1
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 
-
-
-
-
-
-
-
-
 else
 clear
 echo "${VERDE}"
@@ -130,7 +122,7 @@ echo "                          ABRIENDO SOLO DSTAR                             
 echo " **************************************************************************"
 sleep 2
 #Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDSTAR.ini`
+mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMDSTAR.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
@@ -154,8 +146,6 @@ sed -i "5c $frecuencia" /home/pi/INFO_RXF
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 
-
-
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR_ON.png" /home/pi/Abrir_solodstar.desktop
@@ -164,10 +154,6 @@ sed -i "13c SOLODSTAR=ON" /home/pi/status.ini
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_solodstar.desktop
-
-
-
-
 
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
@@ -179,9 +165,6 @@ cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_ircDDB.desktop
 
-
-
-
 # Pone Enable=0 en [Dstar Network]
 sed -i "62c Enable=0" /opt/MMDVM_Bridge/MMDVM_Bridge.ini
 sed -i "62c Enable=0" /opt/MMDVM_Bridge/MMDVM_Bridge_FCS.ini
@@ -190,7 +173,6 @@ sed -i "62c Enable=0" /opt/MMDVM_Bridge/dmrplus.ini
 sed -i "62c Enable=0" /opt/MMDVM_Bridge/especial.ini
 
 sudo systemctl stop ircddbgateway.service
-
 
 # Ejecuta Solo D-STAR
 cd /home/pi/MMDVMHost
