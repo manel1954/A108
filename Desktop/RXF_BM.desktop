@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 #Exec=sh -c "cd /home/pi/A108;lxterminal --geometry=46x13 -e sudo sh info_bm.sh"
-Exec=sh -c "cd /home/pi/A108;,/qt_info_bm"
+Exec=sh -c "cd /home/pi/A108;./qt_info_bm"
 Icon=/home/pi/A108/ICONO_INFO.png
 Type=Application
 StartupNotify=false
