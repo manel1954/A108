@@ -29,13 +29,13 @@ sed -i "20c MARCA_DVSWITCH=ON" /home/pi/status.ini
 
 clear
 
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini`
+mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
 numero_linea_port=`expr substr $mode 1 $caracteres_linea`
 mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini)
-puerto=`expr substr $mode 11 9`
+puerto=`expr substr $mode 15 14`
 puerto="  "$puerto
 cd /home/pi/Desktop
 sudo cp RXF_DMR2NXDN.desktop /home/pi

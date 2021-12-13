@@ -7,6 +7,7 @@ BLANCO="\033[1;37m"
 AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
+MARRON="\33[38;5;138m"
 
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMESPECIAL.ini`
 buscar=":"
@@ -20,7 +21,7 @@ cd /home/pi/Desktop
 sudo cp RXF_ESPECIAL.desktop /home/pi
 #sleep 1
 frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMESPECIAL.ini)
-frecuencia=`expr substr $frecuencia 13 17`
+frecuencia=`expr substr $frecuencia 13 9`
 frecuencia=$frecuencia$puerto
 sed -i "11c Name=$frecuencia" /home/pi/RXF_ESPECIAL.desktop
 #sleep 1

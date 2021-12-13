@@ -1,17 +1,5 @@
 #!/bin/bash
 
-##para el sevicio dmrysf y desactiva DVSWITCH
-#sudo systemctl stop ysfgateway.service
-#sudo systemctl stop dmr2ysf.service
-#sudo systemctl stop analog_bridge.service
-#sudo systemctl stop ircddbgateway.service
-#sudo systemctl stop md380-emu.service
-#sudo systemctl stop mmdvm_bridge.service
-#sudo systemctl stop nxdngateway.service
-##/home/pi/A108/./dvswitch_desactivado
-#sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
-
-
 #Colores
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
@@ -21,13 +9,13 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini`
+mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
 caracteres_linea=`expr $caracteres - 1`
 numero_linea_port=`expr substr $mode 1 $caracteres_linea`
 mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-puerto=`expr substr $mode 11 9`
+puerto=`expr substr $mode 15 14`
 puerto="  "$puerto
 cd /home/pi/Desktop
 sudo cp RXF_DMR2YSF.desktop /home/pi
