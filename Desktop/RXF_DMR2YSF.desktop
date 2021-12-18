@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/A108;sudo sh info_dmr2ysf.sh"
+Exec=sh -c "cd /home/pi/A108;./qt_info_dmr2ysf"
 Icon=/home/pi/A108/ICONO_INFO.png
 Type=Application
 StartupNotify=false
