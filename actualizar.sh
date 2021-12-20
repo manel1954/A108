@@ -6,12 +6,7 @@ xfdesktop --reload
 
 
 
-#ambe3003=$(awk "NR==24" /home/pi/status.ini)
-#if [ $ambe3003 = AMBE3003=OFF ]
-#then
-systemctl stop AMBEServer3003 
-#else
-#fi
+
 
 
 
@@ -279,3 +274,11 @@ sudo rm -R /home/pi/A108/associacioader.com
 sudo rm -R /home/pi/A108/Desktop/associacioader.com
 sudo rm /home/pi/A108/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
+
+
+ambe3003=$(awk "NR==24" /home/pi/status.ini)
+if [ "$ambe3003" = "AMBE3003=OFF" ]
+then
+systemctl stop AMBEServer3003 
+else
+fi
