@@ -6,11 +6,11 @@ xfdesktop --reload
 
 
 
-ambe3003=$(awk "NR==24" /home/pi/status.ini)
-if [ "$ambe3003" = 'AMBE3003=OFF' ];then
+#ambe3003=$(awk "NR==24" /home/pi/status.ini)
+#if [ "$ambe3003" = 'AMBE3003=OFF' ];then
 sudo systemctl stop AMBEServer3003 
-else
-fi
+#else
+#fi
 
 
 
@@ -30,7 +30,7 @@ sed -i "3c YSF=OFF" $usuario/status.ini
 sed -i "4c DV4mini=OFF" $usuario/status.ini
 sed -i "5c MMDVM=OFF" $usuario/status.ini
 sed -i "6c MMDVMPLUS=OFF" $usuario/status.ini
-sed -i "7c MMDVMBM=OFF" $usuario/status.ini
+sed -i "7c MMDVMBM=OFF" $usuario/status.ini#
 sed -i "8c SVXLINK=OFF" $usuario/status.ini
 sed -i "9c dstarrepeater=OFF" $usuario/status.ini
 sed -i "10c MMDVMLIBRE=OFF" $usuario/status.ini
