@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/A108; ./qt_editor_ambe_3003'
+Exec=sh -c 'cd /home/pi/A108; ./qt_menu_ambeserver_y_3003'
 Icon=/home/pi/A108/ICONO_AMBE_SERVER_OFF.png
 Type=Application
 StartupNotify=false
