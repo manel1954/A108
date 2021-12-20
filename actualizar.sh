@@ -277,8 +277,7 @@ sudo rm /home/pi/Desktop/st-data
 
 
 ambe3003=$(awk "NR==24" /home/pi/status.ini)
-if [ "$ambe3003" = 'AMBE3003=OFF' ];
-then
+if [ "$ambe3003" = 'AMBE3003=OFF' ];then
 sudo systemctl stop AMBEServer3003 
 else
 fi
