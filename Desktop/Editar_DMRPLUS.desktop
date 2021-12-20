@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/A108;./qt_editor_dmrplus_new"
+Exec=sh -c "cd /home/pi/A108;./qt_editor_dmrplus"
 Icon=/home/pi/A108/ICONO_EDITAR_DMRPLUS.png
 Type=Application
 StartupNotify=false
