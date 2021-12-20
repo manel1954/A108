@@ -4,6 +4,17 @@ sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
 sleep 2
 xfdesktop --reload
 
+
+
+ambe3003=$(awk "NR==24" /home/pi/status.ini)
+if [ $ambe3003 = "AMBE3003=OFF" ]
+then
+systemctl stop AMBEServer3003 
+else
+fi
+
+
+
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
