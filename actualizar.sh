@@ -7,7 +7,7 @@ xfdesktop --reload
 
 
 ambe3003=$(awk "NR==24" /home/pi/status.ini)
-if [ $ambe3003 = "AMBE3003=OFF" ]
+if [ $ambe3003 = AMBE3003=OFF ]
 then
 systemctl stop AMBEServer3003 
 else
