@@ -279,6 +279,6 @@ ambeoff="AMBE3003=OFF"
 ambe3003=$(awk "NR==24" /home/pi/status.ini)
 if [ "$ambe3003" = "$ambeoff" ];
 then
-systemctl stop AMBEServer3003 
+sudo systemctl stop AMBEServer3003 
 else
 fi
