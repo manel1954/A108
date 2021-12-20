@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=MENU AMBE
+Name[es_ES]=MENU AMBE SERVER
 Hidden=false
 Comment[es_ES]=EA3EIZ
