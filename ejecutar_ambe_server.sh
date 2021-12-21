@@ -25,7 +25,7 @@ sleep 1
 
 cd /home/pi/Desktop
 sudo cp Abrir_ambe_server.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_editor_ambeserver_y_3003'" /home/pi/Abrir_ambe_server.desktop
+sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_menu_ambeserver_y_3003'" /home/pi/Abrir_ambe_server.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_AMBE_SERVER_OFF.png" /home/pi/Abrir_ambe_server.desktop
 sed -i "10c Name[es_ES]=MENU AMBE SERVER" /home/pi/Abrir_ambe_server.desktop
 sed -i "11c AMBE_SERVER=OFF" /home/pi/status.ini
