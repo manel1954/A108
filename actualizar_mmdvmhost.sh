@@ -14,7 +14,7 @@
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
-                    PI="ADER108"\"
+                    PI="ADER111"\"
                     HOY1=$HOY$PI
                     PUNTO=";"   
                     
@@ -23,7 +23,7 @@
                     make clean
                     make -f Makefile.Pi.OLED
 
-                    sudo cp Ŕ /home/pi/.local/MMDVMHost /home/pi
+                    sudo cp -R /home/pi/.local/MMDVMHost /home/pi
 
                     sudo chmod 777 -R /home/pi/MMDVMHost
 
