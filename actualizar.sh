@@ -90,7 +90,7 @@ sed -i "4c $masterbm" $usuario/info_panel_control.ini
 indi=$(awk "NR==2" $usuario/MMDVMHost/MMDVMPLUS.ini)
 ide=$(awk "NR==3" $usuario/MMDVMHost/MMDVMPLUS.ini)
 frec=$(awk "NR==13" $usuario/MMDVMHost/MMDVMPLUS.ini)
-master=`grep -n -m 1 "^Address=" $usuario/MMDVMHost/MMDVMPLUS.ini`
+master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVMPLUS.ini`
 buscar=":"
 largo=`expr index $master $buscar`
 largo=`expr $largo + 1`
@@ -107,7 +107,7 @@ sed -i "14c $masterplus" $usuario/info_panel_control.ini
 indi=$(awk "NR==2" $usuario/MMDVMHost/MMDVM.ini)
 ide=$(awk "NR==3" $usuario/MMDVMHost/MMDVM.ini)
 frec=$(awk "NR==13" $usuario/MMDVMHost/MMDVM.ini)
-master=`grep -n -m 1 "^Address=" $usuario/MMDVMHost/MMDVM.ini`
+master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVM.ini`
 buscar=":"
 largo=`expr index $master $buscar`
 largo=`expr $largo + 1`
