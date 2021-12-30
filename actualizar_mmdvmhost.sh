@@ -12,7 +12,8 @@
                                     
                     cd /home/pi/.local/MMDVMHost
 
-                    HOY=$(date +%Y%m%d)
+                    #HOY=$(date +%Y%m%d) #2022-01-01
+                    HOY=$(date +%d%m%Y)
                     FIJA="const char* VERSION = "\"
                     PI="ADER108"\"
                     HOY1=$HOY$PI
