@@ -73,7 +73,7 @@ frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
 indi=$(awk "NR==2" $usuario/MMDVMHost/MMDVMBM.ini)
 ide=$(awk "NR==3" $usuario/MMDVMHost/MMDVMBM.ini)
 frec=$(awk "NR==13" $usuario/MMDVMHost/MMDVMBM.ini)
-master=`grep -n -m 1 "^Address=" $usuario/MMDVMHost/MMDVMBM.ini`
+master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVMBM.ini`
 buscar=":"
 largo=`expr index $master $buscar`
 largo=`expr $largo + 1`
@@ -98,7 +98,8 @@ largo1=`expr $largo - 2`
 largo=`expr substr $master 1 $largo1`
 letra=c            
 linea_master=$largo$letra
-masterplus=$(awk "NR==$linea_master" $usuario/MMDVMHost/MMDVMPLUS.ini)
+masterplus=$(awk "NR==232" $usuario/MMDVMHost/MMDVMPLUS.ini)
+masterplus=`expr substr $masterplus 14 30`
 sed -i "11c $indi" $usuario/info_panel_control.ini
 sed -i "12c $ide" $usuario/info_panel_control.ini
 sed -i "13c $frec" $usuario/info_panel_control.ini
