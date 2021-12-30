@@ -73,14 +73,14 @@ frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
 indi=$(awk "NR==2" $usuario/MMDVMHost/MMDVMBM.ini)
 ide=$(awk "NR==3" $usuario/MMDVMHost/MMDVMBM.ini)
 frec=$(awk "NR==13" $usuario/MMDVMHost/MMDVMBM.ini)
-master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVMBM.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea_master=$largo$letra
+#master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVMBM.ini`
+#buscar=":"
+#largo=`expr index $master $buscar`
+#largo=`expr $largo + 1`
+#largo1=`expr $largo - 2`
+#largo=`expr substr $master 1 $largo1`
+#letra=c            
+#linea_master=$largo$letra
 masterbm=$(awk "NR==232" $usuario/MMDVMHost/MMDVMBM.ini)
 masterbm=`expr substr $masterbm 15 30`
 sed -i "1c $indi" $usuario/info_panel_control.ini
@@ -109,15 +109,16 @@ sed -i "14c $masterplus" $usuario/info_panel_control.ini
 indi=$(awk "NR==2" $usuario/MMDVMHost/MMDVM.ini)
 ide=$(awk "NR==3" $usuario/MMDVMHost/MMDVM.ini)
 frec=$(awk "NR==13" $usuario/MMDVMHost/MMDVM.ini)
-master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVM.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-largo=`expr substr $master 1 $largo1`
-letra=c            
-linea_master=$largo$letra
-masterradio=$(awk "NR==$linea_master" $usuario/MMDVMHost/MMDVM.ini)
+#master=`grep -n -m 1 "^RemoteAddress=" $usuario/MMDVMHost/MMDVM.ini`
+#buscar=":"
+#largo=`expr index $master $buscar`
+#largo=`expr $largo + 1`
+#largo1=`expr $largo - 2`
+#largo=`expr substr $master 1 $largo1`
+#letra=c            
+#linea_master=$largo$letra
+masterradio=$(awk "NR==232" $usuario/MMDVMHost/MMDVM.ini)
+masterradio=`expr substr $masterradio 15 30`
 sed -i "6c $indi" $usuario/info_panel_control.ini
 sed -i "7c $ide" $usuario/info_panel_control.ini
 sed -i "8c $frec" $usuario/info_panel_control.ini
@@ -136,13 +137,14 @@ sed -i "24c $frec" $usuario/info_panel_control.ini
 sed -i "25c $master" $usuario/info_panel_control.ini
 sed -i "26c $tg" $usuario/info_panel_control.ini
 #DMR2YSF busca el Address DMR2YSF
-master=`grep -n -m 1 "^Address=" $usuario/MMDVMHost/MMDVMDMR2YSF.ini`
-buscar=":"
-largo=`expr index $master $buscar`
-largo=`expr $largo + 1`
-largo1=`expr $largo - 2`
-largo=`expr substr $master 1 $largo1`
-masterDMR2YSF=$(awk "NR==$largo" $usuario/MMDVMHost/MMDVMDMR2YSF.ini)
+#master=`grep -n -m 1 "^Address=" $usuario/MMDVMHost/MMDVMDMR2YSF.ini`
+#buscar=":"
+#largo=`expr index $master $buscar`
+#largo=`expr $largo + 1`
+#largo1=`expr $largo - 2`
+#largo=`expr substr $master 1 $largo1`
+masterDMR2YSF=$(awk "NR==232" $usuario/MMDVMHost/MMDVMDMR2YSF.ini)
+masterDMR2YSF=`expr substr $masterDMR2YSF 15 30`
 #YSFGateway.ini
 master=`grep -n -m 1 "^Startup=" $usuario/YSFClients/YSFGateway/YSFGateway.ini`
 master=`echo "$master" | tr -d '[[:space:]]'`
