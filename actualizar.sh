@@ -99,7 +99,7 @@ largo=`expr substr $master 1 $largo1`
 letra=c            
 linea_master=$largo$letra
 masterplus=$(awk "NR==232" $usuario/MMDVMHost/MMDVMPLUS.ini)
-masterplus=`expr substr $masterplus 14 30`
+masterplus=`expr substr $masterplus 15 30`
 sed -i "11c $indi" $usuario/info_panel_control.ini
 sed -i "12c $ide" $usuario/info_panel_control.ini
 sed -i "13c $frec" $usuario/info_panel_control.ini
