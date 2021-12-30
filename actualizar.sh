@@ -143,8 +143,8 @@ sed -i "26c $tg" $usuario/info_panel_control.ini
 #largo=`expr $largo + 1`
 #largo1=`expr $largo - 2`
 #largo=`expr substr $master 1 $largo1`
-masterDMR2YSF=$(awk "NR==232" $usuario/MMDVMHost/MMDVMDMR2YSF.ini)
-masterDMR2YSF=`expr substr $masterDMR2YSF 15 30`
+masterespecial=$(awk "NR==232" $usuario/MMDVMHost/MMDVMESPECIAL.ini)
+masterespecial=`expr substr $masterespecial 15 30`
 #YSFGateway.ini
 master=`grep -n -m 1 "^Startup=" $usuario/YSFClients/YSFGateway/YSFGateway.ini`
 master=`echo "$master" | tr -d '[[:space:]]'`
@@ -177,7 +177,7 @@ dstar=`sed -n '2p'  $usuario/MMDVMHost/MMDVMDSTAR.ini`
 fusion=`sed -n '2p'  $usuario/MMDVMHost/MMDVMFUSION.ini`
 frbm=`sed -n '13p'  $usuario/MMDVMHost/MMDVMBM.ini`
 frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
-sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'DMR2YSF=$masterDMR2YSF'&'YSFGateway=$masterYSFGateway                      
+sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'ESPECIAL=$masterespecial'&'YSFGateway=$masterYSFGateway                      
 frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
 cd $usuario/Desktop/
 cp RXF_BM.desktop $usuario/
