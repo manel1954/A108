@@ -6,10 +6,6 @@ xfdesktop --reload
 
 
 
-sudo ip addr show eth0 | grep inet > prueba.txt
-
-
-
 ambe3003=$(awk "NR==24" /home/pi/status.ini)
 if [ "$ambe3003" = 'AMBE3003=OFF' ];then
 sudo systemctl stop AMBEServer3003 
