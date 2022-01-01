@@ -6,7 +6,7 @@ xfdesktop --reload
 
 
 
-ip addr show eth0 | grep inet > prueba.txt
+sudo ip addr show eth0 | grep inet > prueba.txt
 
 
 
