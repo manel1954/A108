@@ -59,11 +59,11 @@ MARRON="\33[38;5;138m"
                         fi
 
                         #modificación 01-01-2022
-                        sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_activar_nextiondriver' /home/pi/.local/Activar_NextionDriver.desktop"
-                        sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_OFF.png' /home/pi/.local/Activar_NextionDriver.desktop"
+                        sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_activar_nextiondriver'" /home/pi/.local/Activar_NextionDriver.desktop
+                        sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_OFF.png" /home/pi/.local/Activar_NextionDriver.desktop
 
-                        sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_desactivar_nextiondriver' /home/pi/.local/Desactivar_NextionDriver.desktop"
-                        sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_ON.png' /home/pi/.local/Desactivar_NextionDriver.desktop"
+                        sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_desactivar_nextiondriver'" /home/pi/.local/Desactivar_NextionDriver.desktop
+                        sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_ON.png" /home/pi/.local/Desactivar_NextionDriver.desktop
 
                         # modificacion 26-04-2021
                         #cp /home/pi/A108/pararservicios_hblink.sh /home/pi
