@@ -65,6 +65,8 @@ MARRON="\33[38;5;138m"
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_desactivar_nextiondriver'" /home/pi/.local/Desactivar_NextionDriver.desktop
                         sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_ON.png" /home/pi/.local/Desactivar_NextionDriver.desktop
 
+                        sudo sed -i "27c 30 10 * * * sudo sh /home/pi/A108/actualiza_imagen.sh" /var/spool/cron/crontabs/pi
+
                         # modificacion 26-04-2021
                         #cp /home/pi/A108/pararservicios_hblink.sh /home/pi
                         #cp /home/pi/A108/pararservicios_hblink.desktop /home/pi/.config/autostart
