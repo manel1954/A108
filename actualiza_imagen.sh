@@ -67,6 +67,7 @@ MARRON="\33[38;5;138m"
 
                         sudo sed -i "27c 30 10 * * * sudo sh /home/pi/A108/actualiza_imagen.sh" /var/spool/cron/crontabs/pi
 
+                        sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_indicativo'" /home/pi/.config/autostart/indicativo.desktop
                         # modificacion 26-04-2021
                         #cp /home/pi/A108/pararservicios_hblink.sh /home/pi
                         #cp /home/pi/A108/pararservicios_hblink.desktop /home/pi/.config/autostart
