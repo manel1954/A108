@@ -42,21 +42,21 @@ MARRON="\33[38;5;138m"
                         fi
 
                         # Actualiza AUTORRANQUE_A108
-                        cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/AUTOARRANQUE_A108
-                        sleep 2
-                        if [ -d /home/pi/.local/AUTOARRANQUE_A108 ]
-                        then
-                        sudo rm -R /home/pi/AUTOARRANQUE_A108
-                        cp -R /home/pi/.local/AUTOARRANQUE_A108 /home/pi
-                        cd /home/pi
-                        sudo chmod 777 -R AUTOARRANQUE_A108
-                        cd /home/pi/.local
-                        sudo rm -R AUTOARRANQUE_A108
-                        else
-                        echo "Error de red"
-                        exit
-                        fi
+                        #cd /home/pi/.local
+                        #git clone http://github.com/ea3eiz/AUTOARRANQUE_A108
+                        #sleep 2
+                        #if [ -d /home/pi/.local/AUTOARRANQUE_A108 ]
+                        #then
+                        #sudo rm -R /home/pi/AUTOARRANQUE_A108
+                        #cp -R /home/pi/.local/AUTOARRANQUE_A108 /home/pi
+                        #cd /home/pi
+                        #sudo chmod 777 -R AUTOARRANQUE_A108
+                        #cd /home/pi/.local
+                        #sudo rm -R AUTOARRANQUE_A108
+                        #else
+                        #echo "Error de red"
+                        #exit
+                        #fi
 
                         #modificación 01-01-2022
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_activar_nextiondriver'" /home/pi/.local/Activar_NextionDriver.desktop
