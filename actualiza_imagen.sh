@@ -19,7 +19,7 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/A108
                         sleep 2
-                        if [ -d /home/pi/.local/A108 ]
+                        if [ -f /home/pi/.local/A108/aviso ]
                         then
                         sudo rm -R /home/pi/A108
                         cp -R /home/pi/.local/A108 /home/pi
