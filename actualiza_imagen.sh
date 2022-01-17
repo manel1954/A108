@@ -73,6 +73,9 @@ MARRON="\33[38;5;138m"
                         #cp /home/pi/A108/pararservicios_hblink.desktop /home/pi/.config/autostart
                         #sudo chmod 777 /home/pi/pararservicios_hblink.sh
                         #sudo chmod 777 /home/pi/.config/autostart/pararservicios_hblink.desktop
+                        sudo sed -i "1c 01-01-2022" /home/pi/.config/autostart/actualizacion
+
+
 
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         #cd /var/lib/mmdvm
