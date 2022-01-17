@@ -68,19 +68,9 @@ MARRON="\33[38;5;138m"
                         sudo sed -i "27c 30 10 * * * sudo sh /home/pi/A108/actualiza_imagen.sh" /var/spool/cron/crontabs/pi
 
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_indicativo'" /home/pi/.config/autostart/indicativo.desktop
-                        # modificacion 26-04-2021
-                        #cp /home/pi/A108/pararservicios_hblink.sh /home/pi
-                        #cp /home/pi/A108/pararservicios_hblink.desktop /home/pi/.config/autostart
-                        #sudo chmod 777 /home/pi/pararservicios_hblink.sh
-                        #sudo chmod 777 /home/pi/.config/autostart/pararservicios_hblink.desktop
+
+                        # modificacion 17-01-2022
                         sudo sed -i "1c 01-01-2022" /home/pi/.config/autostart/actualizacion
-
-
-
-                        # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
-                        #cd /var/lib/mmdvm
-                        #sudo curl --fail -o DMRIds.dat -s http://www.pistar.uk/downloads/DMRIds.dat
-                        #sudo chmod 777 -R /var/lib/mmdvm
 
                         # 26-08-2020 actualizar salas DSTAR
                         cd /usr/share/opendv/
@@ -97,6 +87,7 @@ MARRON="\33[38;5;138m"
                         sudo curl --fail -o DCS_Hosts.txt -s http://www.pistar.uk/downloads/DCS_Hosts.txt
                         sleep 1
                         sudo curl --fail -o DPlus_Hosts.txt -s http://www.pistar.uk/downloads/DPlus_Hosts.txt
+
                         # 26-08-2020 actualizar salas dv4mini
                         sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip
 
@@ -133,5 +124,5 @@ MARRON="\33[38;5;138m"
                         sudo cp RXF_NXDN.desktop $usuario/Desktop
                         sudo rm $usuario/RXF_NXDN.desktop
 
-clear
-/home/pi/A108/./qt_imagen_actualizada
+                        clear
+                        /home/pi/A108/./qt_imagen_actualizada
