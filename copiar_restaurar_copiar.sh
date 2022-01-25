@@ -170,7 +170,7 @@ sudo cp -f /opt/HBlink3/rules.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
 sudo cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
 sudo cp -f /opt/HBmonitor/monitor.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
-sudo cp -f /opt/HBmonitor/indx_template.html /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBmonitor/index_template.html /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
 sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
