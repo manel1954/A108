@@ -72,6 +72,21 @@ MARRON="\33[38;5;138m"
                         # modificacion 17-01-2022
                         sudo sed -i "1c 01-01-2022" /home/pi/.config/autostart/actualizacion
 
+
+                        # modificacion 17-01-2022
+                        cd /home/pi/A108
+                        cp index_template.html_00 /opt/HBmonitor
+                        cp index_template.html_01 /opt/HBmonitor
+                        cp index_template.html_02 /opt/HBmonitor
+                        cp index_template.html_03 /opt/HBmonitor
+                        cp index_template.html_04 /opt/HBmonitor
+
+                        cp monitor.py_00 /opt/HBmonitor
+                        cp monitor.py_01 /opt/HBmonitor
+                        cp monitor.py_02 /opt/HBmonitor
+                        cp monitor.py_03 /opt/HBmonitor
+                        cp monitor.py_04 /opt/HBmonitor
+
                         # 26-08-2020 actualizar salas DSTAR
                         cd /usr/share/opendv/
                         sudo curl --fail -o DExtra_Hosts.txt -s http://www.pistar.uk/downloads/DExtra_Hosts.txt
