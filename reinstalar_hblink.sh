@@ -118,6 +118,7 @@ sudo cp /home/pi/A108/config.py /opt/HBmonitor/
 sudo cp /home/pi/A108/monitor.py /opt/HBmonitor/
 sudo cp /home/pi/A108/bridge_table.html /opt/HBmonitor/templates/
 sudo cp /home/pi/A108/hblink_table.html /opt/HBmonitor/templates/
+sudo cp /home/pi/A108/lastheard.html /opt/HBmonitor/templates/
 
                         # modificacion 26-01-2022
                         #cd /home/pi/.local
