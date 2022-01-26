@@ -121,11 +121,11 @@ sudo cp /home/pi/A108/hblink_table.html /opt/HBmonitor/templates/
 
                         # modificacion 26-01-2022
                         cd /home/pi/.local
-                        cp index_template.html_00 /opt/HBmonitor
-                        cp index_template.html_01 /opt/HBmonitor
-                        cp index_template.html_02 /opt/HBmonitor
-                        cp index_template.html_03 /opt/HBmonitor
-                        cp index_template.html_04 /opt/HBmonitor
+                        mv index_template.html_00 /opt/HBmonitor
+                        mv index_template.html_01 /opt/HBmonitor
+                        mv index_template.html_02 /opt/HBmonitor
+                        mv index_template.html_03 /opt/HBmonitor
+                        mv index_template.html_04 /opt/HBmonitor
 
                         mv monitor.py_00 /opt/HBmonitor
                         mv monitor.py_01 /opt/HBmonitor
