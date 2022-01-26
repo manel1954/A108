@@ -127,11 +127,11 @@ sudo cp /home/pi/A108/hblink_table.html /opt/HBmonitor/templates/
                         cp index_template.html_03 /opt/HBmonitor
                         cp index_template.html_04 /opt/HBmonitor
 
-                        cp monitor.py_00 /opt/HBmonitor
-                        cp monitor.py_01 /opt/HBmonitor
-                        cp monitor.py_02 /opt/HBmonitor
-                        cp monitor.py_03 /opt/HBmonitor
-                        cp monitor.py_04 /opt/HBmonitor
+                        mv monitor.py_00 /opt/HBmonitor
+                        mv monitor.py_01 /opt/HBmonitor
+                        mv monitor.py_02 /opt/HBmonitor
+                        mv monitor.py_03 /opt/HBmonitor
+                        mv monitor.py_04 /opt/HBmonitor
 
 #Start monitor service:
 sudo cp utils/hbmon.service /lib/systemd/system/
