@@ -863,13 +863,13 @@ if __name__ == '__main__':
     # Connect to HBlink
     reactor.connectTCP(HBLINK_IP, HBLINK_PORT, reportClientFactory())
 
-# Create websocket server to push content to clients
-dashboard_server = dashboardFactory('ws://*:9004')
-dashboard_server.protocol = dashboard
-reactor.listenTCP(9004, dashboard_server)
+    # Create websocket server to push content to clients
+    dashboard_server = dashboardFactory('ws://*:9004')
+    dashboard_server.protocol = dashboard
+    reactor.listenTCP(9004, dashboard_server)
 
-# Create static web server to push initial index.html
-website = Site(web_server())
-reactor.listenTCP(WEB_SERVER_PORT, website)
+    # Create static web server to push initial index.html
+    website = Site(web_server())
+    reactor.listenTCP(WEB_SERVER_PORT, website)
 
-reactor.run()
+    reactor.run()

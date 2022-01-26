@@ -864,7 +864,7 @@ if __name__ == '__main__':
     reactor.connectTCP(HBLINK_IP, HBLINK_PORT, reportClientFactory())
 
     # Create websocket server to push content to clients
-	dashboard_server = dashboardFactory('ws://*:9002')
+    dashboard_server = dashboardFactory('ws://*:9002')
     dashboard_server.protocol = dashboard
     reactor.listenTCP(9002, dashboard_server)
 
