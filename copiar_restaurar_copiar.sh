@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-            rm /home/pi/.local/COPIA_SEGURIDAD/Downloads/*.*
+            sudo rm /home/pi/.local/COPIA_SEGURIDAD/Downloads/*.*
             
             cp /home/pi/.local/datos_dvswitch /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
@@ -165,14 +165,14 @@ sed -i "13c $sala_nxdn" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 sed -i "14c $selfcare" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 sed -i "15c $reflector_dstar" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 
-cp -f /opt/HBlink3/hblink.cfg /home/pi/.local/COPIA_SEGURIDAD/Downloads
-cp -f /opt/HBlink3/rules.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
-cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBlink3/hblink.cfg /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBlink3/rules.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-cp -f /opt/HBmonitor/monitor.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
-cp -f /opt/HBmonitor/index_template.html /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBmonitor/monitor.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBmonitor/index_template.html /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-chmod 777 -R /home/pi/.local/COPIA_SEGURIDAD
+sudo chmod 777 -R /home/pi/.local/COPIA_SEGURIDAD
 
