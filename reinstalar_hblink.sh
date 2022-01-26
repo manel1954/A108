@@ -17,18 +17,18 @@ MARRON="\33[38;5;138m"
                         echo "*********************************************************************************"
                         echo "*********************************************************************************"
                         # modificacion 26-01-2022
-                        cd /home/pi/A108
-                        cp index_template.html_00 /home/pi/.local
-                        cp index_template.html_01 /home/pi/.local
-                        cp index_template.html_02 /home/pi/.local
-                        cp index_template.html_03 /home/pi/.local
-                        cp index_template.html_04 /home/pi/.local
+                        #cd /home/pi/A108
+                        #cp index_template.html_00 /home/pi/.local
+                        #cp index_template.html_01 /home/pi/.local
+                        #cp index_template.html_02 /home/pi/.local
+                        #cp index_template.html_03 /home/pi/.local
+                        #cp index_template.html_04 /home/pi/.local
 
-                        cp monitor.py_00 /home/pi/.local
-                        cp monitor.py_01 /home/pi/.local
-                        cp monitor.py_02 //home/pi/.local
-                        cp monitor.py_03 /home/pi/.local
-                        cp monitor.py_04 /home/pi/.local
+                        #cp monitor.py_00 /home/pi/.local
+                        #cp monitor.py_01 /home/pi/.local
+                        #cp monitor.py_02 //home/pi/.local
+                        #cp monitor.py_03 /home/pi/.local
+                        #cp monitor.py_04 /home/pi/.local
 
 
 sudo rm -R /opt/HBlink3
@@ -120,18 +120,18 @@ sudo cp /home/pi/A108/bridge_table.html /opt/HBmonitor/templates/
 sudo cp /home/pi/A108/hblink_table.html /opt/HBmonitor/templates/
 
                         # modificacion 26-01-2022
-                        cd /home/pi/.local
-                        mv index_template.html_00 /opt/HBmonitor
-                        mv index_template.html_01 /opt/HBmonitor
-                        mv index_template.html_02 /opt/HBmonitor
-                        mv index_template.html_03 /opt/HBmonitor
-                        mv index_template.html_04 /opt/HBmonitor
+                        #cd /home/pi/.local
+                        #mv index_template.html_00 /opt/HBmonitor
+                        #mv index_template.html_01 /opt/HBmonitor
+                        #mv index_template.html_02 /opt/HBmonitor
+                        #mv index_template.html_03 /opt/HBmonitor
+                        #mv index_template.html_04 /opt/HBmonitor
 
-                        mv monitor.py_00 /opt/HBmonitor
-                        mv monitor.py_01 /opt/HBmonitor
-                        mv monitor.py_02 /opt/HBmonitor
-                        mv monitor.py_03 /opt/HBmonitor
-                        mv monitor.py_04 /opt/HBmonitor
+                        #mv monitor.py_00 /opt/HBmonitor
+                        #mv monitor.py_01 /opt/HBmonitor
+                        #mv monitor.py_02 /opt/HBmonitor
+                        #mv monitor.py_03 /opt/HBmonitor
+                        #mv monitor.py_04 /opt/HBmonitor
 
 #Start monitor service:
 sudo cp utils/hbmon.service /lib/systemd/system/
