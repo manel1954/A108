@@ -16,20 +16,6 @@ MARRON="\33[38;5;138m"
                         echo "                                REINSTALANDO HBLINK                              "
                         echo "*********************************************************************************"
                         echo "*********************************************************************************"
-                        # modificacion 26-01-2022
-                        #cd /home/pi/A108
-                        #cp index_template.html_00 /home/pi/.local
-                        #cp index_template.html_01 /home/pi/.local
-                        #cp index_template.html_02 /home/pi/.local
-                        #cp index_template.html_03 /home/pi/.local
-                        #cp index_template.html_04 /home/pi/.local
-
-                        #cp monitor.py_00 /home/pi/.local
-                        #cp monitor.py_01 /home/pi/.local
-                        #cp monitor.py_02 //home/pi/.local
-                        #cp monitor.py_03 /home/pi/.local
-                        #cp monitor.py_04 /home/pi/.local
-
 
 sudo rm -R /opt/HBlink3
 sudo rm -R /opt/HBmonitor
