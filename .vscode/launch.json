@@ -5,15 +5,13 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [
-        ""
-      ],
+      "args": [],
       "stopAtEntry": true,
       "cwd": "/Users/manueldiazjimenez/Documents/GitHub/A108",
       "environment": [],
       "program": "/Users/manueldiazjimenez/Documents/GitHub/A108/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
+      "MIMode": "lldb",
       "externalConsole": true
     }
   ]
