@@ -2,7 +2,7 @@
 #cierra ircDDBGateway
 sudo killall ircddbgateway
 #cierra remotecontrol
-sudo killall remotecontrol
+sudo killall MMDVMHost
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #cierra Abrir_ircDDBGateway.desktop y quita icono verde de "cerrar ircDDB" 
