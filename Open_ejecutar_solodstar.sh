@@ -1,10 +1,6 @@
 #!/bin/bash
-
-# Ejecuta Solo D-STAR
-cd /home/pi/MMDVMHost
-#/home/pi/A108/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
-sudo ircddbgateway -gui & sudo ./MMDVMHost MMDVM.ini
-
+sudo ircddbgateway -gui &
+xterm -geometry 76x15+1296+560 -bg black -fg white -fa 'Serif' -fs 9x -T SOLO_DSTAR -e sudo sh Open_ejecutar_solodstar.sh
 
 
 
