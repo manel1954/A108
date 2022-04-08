@@ -2,7 +2,7 @@
 cd /home/pi/release/build/xlx_ambed
 #!/bin/bash
 # start ambed server
-
+sed -i '26c AMBED=ON' /home/pi/status.ini
 sudo rmmod ftdi_sio
 
 sudo rmmod usbserial
