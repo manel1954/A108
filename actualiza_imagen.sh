@@ -91,7 +91,7 @@ sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_desactivar_nextiondriver'" /home/pi/.local/Desactivar_NextionDriver.desktop
                         sed -i "5c Icon=//home/pi/A108/ICONO_NEXTIONDRIVER_ON.png" /home/pi/.local/Desactivar_NextionDriver.desktop
 
-                        sudo sed -i "27c 30 10 * * * sudo sh /home/pi/A108/actualiza_imagen.sh" /var/spool/cron/crontabs/pi
+                        sudo sed -i "27c 30 20 * * * sudo sh /home/pi/A108/actualiza_imagen.sh" /var/spool/cron/crontabs/pi
 
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_indicativo'" /home/pi/.config/autostart/indicativo.desktop
 
