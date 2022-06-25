@@ -44,7 +44,7 @@ MARRON="\33[38;5;138m"
                         # Modificacion 25-06-2022
                         if [ -f /home/pi/.local/nextion_dmrgateway ]
                         then
-                        echo "no hace nada"
+                        echo ""
                         else
                         cd /home/pi/A108
                         cp nextion_dmrgateway /home/pi/.local
@@ -52,7 +52,7 @@ MARRON="\33[38;5;138m"
 
                         if [ -f /home/pi/.local/oled_dmrgateway ]
                         then
-                        echo "no hace nada"
+                        echo ""
                         else
                         cd /home/pi/A108
                         cp oled_dmrgateway /home/pi/.local
