@@ -40,6 +40,22 @@ MARRON="\33[38;5;138m"
                         sleep 5
                         exit
                         fi
+                        # Modificacion 25-06-2022
+                        if [ -f /home/pi/.local/nextion_dmrgateway ]
+                        then
+                        cd /home/pi/A108
+                        cp nextion_dmrgateway /home/pi/.local
+                        else
+                        echo "no hace nada"
+                        fi
+                        if [ -f /home/pi/.local/oled_dmrgateway ]
+                        then
+                        cd /home/pi/A108
+                        cp oled_dmrgateway /home/pi/.local
+                        else
+                        echo "no hace nada"
+                        fi
+
 
                         # Actualiza AUTORRANQUE_A108
                         #cd /home/pi/.local
