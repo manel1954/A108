@@ -170,7 +170,7 @@ sudo echo 1 > /sys/class/gpio/gpio20/value
 sudo sleep 0.5
 sudo echo 20 > /sys/class/gpio/unexport
 sudo echo 21 > /sys/class/gpio/unexport
-sudo sed -i "27c 30 10 * * * sudo sh /home/pi/A108/actualiza_ish" /var/spool/cron/crontabs/pi
+sudo sed -i "24c 30 10 * * * sudo sh /home/pi/A108/actualiza_ish" /var/spool/cron/crontabs/pi
 # cp $usuario/$SCRIPTS_version/panel_control.php /var/www/html/panel_control 
 bm=`sed -n '2p'  $usuario/MMDVMHost/MMDVMBM.ini`
 plus=`sed -n '2p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
