@@ -57,6 +57,14 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/A108
                         cp oled_dmrgateway /home/pi/.local
                         fi
+sed -i '97c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '127c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '135c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '144c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '152c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '159c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '163c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
 
 
                         # Actualiza AUTORRANQUE_A108
