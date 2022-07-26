@@ -52,7 +52,7 @@ MARRON="\33[38;5;138m"
 
                         # Modificacion 26-07-2022
                         TGLIST=$(awk "NR==25" /home/pi/DMR2YSF/TG-YSFList.txt)
-                        if [ $TGLIST == 25 ]
+                        if [ $TGLIST = 25 ]
                         then
                         echo ""
                         else
@@ -62,7 +62,7 @@ MARRON="\33[38;5;138m"
                         fi
 
                         sala=$(awk "NR==25" /home/pi/.local)
-                        if [ $sala == 25 ]
+                        if [ $sala = 25 ]
                         then
                         echo ""
                         else
