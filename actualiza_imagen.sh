@@ -61,7 +61,7 @@ MARRON="\33[38;5;138m"
                         sudo chmod 755 /home/pi/DMR2YSF/TG-YSFList.txt
                         fi
 
-                        sala=$(awk "NR==25" /home/pi/.local)
+                        sala=$(awk "NR==25" /home/pi/.local/sala.txt)
                         if [ $sala = 25 ]
                         then
                         echo ""
