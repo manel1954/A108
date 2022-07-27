@@ -35,7 +35,6 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 fi
 
 
-
 # Elegir icono Editar BM
 cd /home/pi/Desktop
 sudo cp Editar_MMDVMBM.desktop /home/pi
@@ -52,10 +51,6 @@ cd /home/pi/Desktop
 sudo cp RXF_BM.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_bm'" /home/pi/RXF_BM.desktop
 sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_BM.desktop
-#sed -i "11c Name[es_ES]=0" /home/pi/RXF_BM.desktop
-
-sed -i "11c Name=$frecuencia" /home/pi/RXF_BM.desktop
-
 
 cd /home/pi
 sudo cp RXF_BM.desktop /home/pi/Desktop
