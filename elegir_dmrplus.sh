@@ -53,7 +53,8 @@ sudo rm /home/pi/Editar_DMRPLUS.desktop
 cd /home/pi/Desktop
 sudo cp RXF_DMRPLUS.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_dmrplus_new'" /home/pi/RXF_DMRPLUS.desktop
-sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_DMRPLUS.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_DMRPLUS.desktop
+sed -i "6c Type=Application" /home/pi/RXF_DMRPLUS.desktop
 sed -i "11c Name[es_ES]=$frecuencia" /home/pi/RXF_DMRPLUS.desktop
 
 cd /home/pi
