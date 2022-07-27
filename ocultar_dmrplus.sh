@@ -27,7 +27,7 @@ sudo rm /home/pi/Editar_DMRPLUS.desktop
 cd /home/pi/Desktop
 sudo cp RXF_DMRPLUS.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;ls'" /home/pi/RXF_DMRPLUS.desktop
-sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_TRANSPARENTE.png" /home/pi/RXF_DMRPLUS.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_TRANSPARENTE.png" /home/pi/RXF_DMRPLUS.desktop
 sed -i "11c Name[es_ES]=." /home/pi/RXF_DMRPLUS.desktop
 
 cd /home/pi
