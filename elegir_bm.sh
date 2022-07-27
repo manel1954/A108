@@ -52,7 +52,7 @@ cd /home/pi/Desktop
 sudo cp RXF_BM.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_bm'" /home/pi/RXF_BM.desktop
 sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_BM.desktop
-sed -i "12c Name[es_ES]=$frecuencia" /home/pi/Editar_MMDVMBM.desktop
+sed -i "12c Name[es_ES]=$frecuencia" /home/pi/RXF_BM.desktop
 
 cd /home/pi
 sudo cp RXF_BM.desktop /home/pi/Desktop
