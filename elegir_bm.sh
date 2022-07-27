@@ -1,4 +1,6 @@
 #!/bin/bash
+#Lee en el fichero INFO_RXF para poner los datos en el icono INFO TXF
+frecuencia=$(awk "NR==1" /home/pi/INFO_RXF)
 
 onoff=$(awk "NR==7" /home/pi/status.ini)
 if [ $onoff = MMDVMBM=ON ]
@@ -26,7 +28,6 @@ sudo cp Abrir_MMDVMBM.desktop /home/pi
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=77x18 --title=BRANDMEISTER -e sudo sh ejecutar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_OFF.png" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "10c Name[es_ES]=Abrir BM" /home/pi/Abrir_MMDVMBM.desktop
-#sed -i "7c MMDVMBM=OFF" /home/pi/status.ini
 cd /home/pi
 
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
@@ -51,6 +52,7 @@ cd /home/pi/Desktop
 sudo cp RXF_BM.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_bm'" /home/pi/RXF_BM.desktop
 sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_BM.desktop
+sed -i "12c Name[es_ES]=$frecuencia" /home/pi/Editar_MMDVMBM.desktop
 
 cd /home/pi
 sudo cp RXF_BM.desktop /home/pi/Desktop
