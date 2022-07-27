@@ -26,7 +26,7 @@ sudo rm /home/pi/Editar_MMDVMBM.desktop
 # Ocultar icono Editar info BM
 cd /home/pi/Desktop
 sudo cp RXF_BM.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;ls'" /home/pi/RXF_BM.desktop
+sed -i "5c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;ls'" /home/pi/RXF_BM.desktop
 sed -i "6c Icon=/home/pi/$SCRIPTS_version/ICONO_TRANSPARENTE.png" /home/pi/RXF_BM.desktop
 sed -i "12c Name[es_ES]=." /home/pi/RXF_BM.desktop
 
