@@ -40,24 +40,23 @@ fi
 
 # Elegir icono Editar Radio
 cd /home/pi/Desktop
-sudo cp Editar_DMRPLUS.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_editor_dmrplus'" /home/pi/Editar_DMRPLUS.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_EDITAR_DMRPLUS.png" /home/pi/Editar_DMRPLUS.desktop
-sed -i "11c Name[es_ES]=Editar DMR+" /home/pi/Editar_DMRPLUS.desktop
+sudo cp Editar_Radio.desktop /home/pi
+sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_editor_radio'" /home/pi/Editar_Radio.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_EDITAR_BLUEDV.png" /home/pi/Editar_Radio.desktop
+sed -i "11c Name[es_ES]=Editar RADIO" /home/pi/Editar_Radio.desktop
 
 cd /home/pi
-sudo cp Editar_DMRPLUS.desktop /home/pi/Desktop
-sudo rm /home/pi/Editar_DMRPLUS.desktop
+sudo cp Editar_Radio.desktop /home/pi/Desktop
+sudo rm /home/pi/Editar_Radio.desktop
 
 # Elegir icono Editar info Radio
 cd /home/pi/Desktop
-sudo cp RXF_DMRPLUS.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_dmrplus_new'" /home/pi/RXF_DMRPLUS.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_DMRPLUS.desktop
-sed -i "6c Type=Application" /home/pi/RXF_DMRPLUS.desktop
-sed -i "11c Name[es_ES]=$frecuencia" /home/pi/RXF_DMRPLUS.desktop
+sudo cp RXF_RADIO.desktop /home/pi
+sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;./qt_info_radio'" /home/pi/RXF_RADIO.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_INFO.png" /home/pi/RXF_RADIO.desktop
+sed -i "11c Name[es_ES]=$frecuencia" /home/pi/RXF_RADIO.desktop
 
 cd /home/pi
-sudo cp RXF_DMRPLUS.desktop /home/pi/Desktop
-sudo rm /home/pi/RXF_DMRPLUS.desktop
+sudo cp RXF_RADIO.desktop /home/pi/Desktop
+sudo rm /home/pi/RXF_RADIO.desktop
 
