@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Lee en el fichero INFO_RXF para poner los datos en el icono INFO TXF
-frecuencia=$(awk "NR==3" /home/pi/INFO_RXF)
+frecuencia=$(awk "NR==4" /home/pi/INFO_RXF)
 
 onoff=$(awk "NR==5" /home/pi/status.ini)
 if [ $onoff = MMDVM=ON ]
