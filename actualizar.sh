@@ -1,8 +1,8 @@
 ﻿#!/bin/bash
 # Coloca bien los iconos en el escritorio
-sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
-sleep 2
-xfdesktop --reload
+#sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
+#sleep 2
+#xfdesktop --reload
 
 
 
