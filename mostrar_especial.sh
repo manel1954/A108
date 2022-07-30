@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #Lee en el fichero INFO_RXF para poner los datos en el icono INFO TXF
-frecuencia=$(awk "NR==2" /home/pi/INFO_RXF)
+frecuencia=$(awk "NR==3" /home/pi/INFO_RXF)
 
-onoff=$(awk "NR==6" /home/pi/status.ini)
-if [ $onoff = MMDVMPLUS=ON ]
+onoff=$(awk "NR==10" /home/pi/status.ini)
+if [ $onoff = MMDVMESPECIAL=ON ]
 then
-# Botón  Abrir DMR+ ON
+# Botón  Abrir ESPECIAL ON
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
