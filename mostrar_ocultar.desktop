@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=bienvenida
 Comment=EA3EIZ MMDVM Image
-Exec=sh -c 'cd /home/pi/A108; ./qt_OpenMostrarOcultar'
+Exec=sh -c 'cd /home/pi/A108;sleep 10; ./qt_OpenMostrarOcultar'
 Type=Application
 Terminal=false
 Name[es_ES]=mostrarocultar
