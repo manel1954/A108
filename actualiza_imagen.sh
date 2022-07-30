@@ -118,8 +118,8 @@ sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
 
                         sed -i "4c Exec=sh -c 'cd /home/pi/A108; ./qt_indicativo'" /home/pi/.config/autostart/indicativo.desktop
 
-                        # modificacion 17-01-2022
-                        sudo sed -i "1c 01-01-2022" /home/pi/.config/autostart/actualizacion
+                        # modificacion 01-08-2022
+                        sudo sed -i "1c 01-08-2022" /home/pi/.config/autostart/actualizacion
 
 
                         # modificacion 17-01-2022
