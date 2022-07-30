@@ -22,6 +22,7 @@ sudo rm /home/pi/Abrir_ESPECIAL.desktop
 
 else
 # Botón  Abrir ESPECIAL+ OFF
+SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_ESPECIAL.desktop /home/pi
 
