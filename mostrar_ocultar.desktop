@@ -4,5 +4,5 @@ Comment=EA3EIZ MMDVM Image
 Exec=sh -c 'cd /home/pi/A108;sleep 15; ./qt_OpenMostrarOcultar'
 Type=Application
 Terminal=false
-Name[es_ES]=mostrarocultar
-Name[es_ES.UTF-8]=mostrarocultar
+Name[es_ES]=mostrar_ocultar
+

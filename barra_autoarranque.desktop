@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=bienvenida
+Comment=EA3EIZ MMDVM Image
+Exec=sh -c 'cd /home/pi/A108;sleep 15; ./qt_OpenBarraAutoarranque'
+Type=Application
+Terminal=false
+Name[es_ES]=barra_autoarranque

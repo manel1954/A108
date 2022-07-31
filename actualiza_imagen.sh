@@ -122,6 +122,7 @@ sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
                         sudo sed -i "1c 01-08-2022" /home/pi/.config/autostart/actualizacion
                         cd /home/pi/A108
                         cp mostrar_ocultar.desktop /home/pi/.config/autostart
+                        cp barra_autoarranque.desktop /home/pi/.config/autostart
 
                         # modificacion 17-01-2022
                         #cd /home/pi/A108
