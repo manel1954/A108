@@ -16,7 +16,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-                        sudo rm -R /home/pi/.local/A108
+                        #sudo rm -R /home/pi/.local/A108
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/A108
                         sleep 2
@@ -36,7 +36,7 @@ MARRON="\33[38;5;138m"
                         echo "           ERROR DE RED            "
                         echo -n "${VERDE}"
                         echo "***********************************"
-
+                        sudo rm -R /home/pi/.local/A108
                         echo "${GRIS}"
                         sleep 5
                         exit
