@@ -26,5 +26,10 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "editor.cursorBlinking": "blink",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.comments.insertSpace": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
 }
