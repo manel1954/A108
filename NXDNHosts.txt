@@ -216,9 +216,6 @@
 # 22292 IT MP XLX039/B BM2222
 22292	hblink.dmrbrescia.it	41400
 
-# 22401 PA7LIM NXDN
-22401 nxdn.pa7lim.nl 41400
-
 # 22488 Digital Network
 22488	185.203.119.229	41400
 
