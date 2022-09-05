@@ -91,12 +91,12 @@ sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
 
 
 # Modificacion 06-09-2022
-sed -i '235c Jitter=360' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-sed -i '236c Slot1=1' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-sed -i '237c Slot2=1' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-sed -i '238c # Options=' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-sed -i '239c # ModeHang=3' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-sed -i '240c Debug=0' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '235c Jitter=360' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '236c Slot1=1' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '237c Slot2=1' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '238c # Options=' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '239c # ModeHang=3' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+#sed -i '240c Debug=0' /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
                         # Actualiza AUTORRANQUE_A108
                         #cd /home/pi/.local
