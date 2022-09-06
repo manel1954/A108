@@ -187,7 +187,7 @@
 21430	alcayna.duckdns.org	41400
 
 # 21465 ADER Multimode
-# 21465	aderdigital.ddns.net	41400
+21465	aderdigital.ddns.net	41400
 
 # 21909 PRIDE - Multi-mode HUB & Reflector
 21909	hub.kimberlychase.com	41400
@@ -469,7 +469,7 @@
 
 21463 nxdn.pa7lim.nl 41400
 
-21465 nxdn.pa7lim.nl 41400
+21466 nxdn.pa7lim.nl 41400
 
 37030 nxdn.pa7lim.nl 41400
 
