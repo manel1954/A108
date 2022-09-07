@@ -161,6 +161,9 @@ sed -i '209c Enable=0' /home/pi/MMDVMHost/MMDVMDMRGateway.ini
                         sleep 1
                         sudo curl --fail -o DPlus_Hosts.txt -s http://www.pistar.uk/downloads/DPlus_Hosts.txt
 
+
+                        sudo curl --fail -o NXDN.csv -s http://www.pistar.uk/downloads/NXDN.csv
+
                         # 26-08-2020 actualizar salas dv4mini
                         sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip
 
