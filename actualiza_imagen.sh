@@ -15,7 +15,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
-
+                        sudo apt install xterm -y
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/A108
                         sleep 2
